@@ -1,34 +1,32 @@
-package com.alan.hackerrank.desafios;
+import java.io.*;
 import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 
-public class Day1_DataTypes {
+public class Solution {
+	
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
 		
-		int i = 4;
-		double d = 4.0;
-		String s = "HackerRank ";
+        Scanner scan = new Scanner(System.in);
 
-		Scanner scan = new Scanner(System.in);
-		
-		int secondInt;
-		double secondDouble;
-		String secondString;
-		
-		System.out.println("Enter second int: ");
-		secondInt = scan.nextInt();
-				
-		System.out.println("Enter second double: ");
-		secondDouble = scan.nextDouble();
-		
-		System.out.println("Enter second String: ");
-		secondString = scan.nextLine();
-		
-		System.out.println(i + secondInt);
-		System.out.println(d + secondDouble);
-		System.out.println(s + secondString);
-		
-		scan.close();
-	}
-
+        int secondInt;
+        double secondDouble;
+        String secondString;
+    
+        secondInt = scan.nextInt();
+        secondDouble = scan.nextDouble();
+        secondString = scan.next() + scan.nextLine();
+        
+        System.out.println(i + secondInt);
+        
+	System.out.println(d + secondDouble);
+       
+        System.out.println(s + secondString);
+        scan.close();
+    }
 }

@@ -1,29 +1,30 @@
-package com.alan.hackerrank.desafios;
 import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
 import java.util.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.toList;
+import java.util.concurrent.*;
+import java.util.regex.*;
 
-public class Day7_Arrays {
-	
-	public static void main(String[] args) throws IOException {
-		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+public class Solution {
 
-		System.out.println("Enter array length: ");
-        int n = Integer.parseInt(bufferedReader.readLine().trim());
-        
-	    System.out.println("Elements of array - Example: 1 2 3 4 (for an array of size n=4): ");
-	    List<Integer> arr = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-	          .map(Integer::parseInt)
-	          .collect(toList());
+    private static final Scanner scanner = new Scanner(System.in);
 
-        Collections.reverse(arr);
-        
-        for(int i = 0; i < n; i++) {
-        	System.out.print(arr.get(i) + " ");
+    public static void main(String[] args) {
+        int n = scanner.nextInt();
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        int[] arr = new int[n];
+
+        String[] arrItems = scanner.nextLine().split(" ");
+        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+        for (int i = (n-1); i >= 0; i--) {
+            int arrItem = Integer.parseInt(arrItems[i]);
+            arr[i] = arrItem;
+            System.out.print(arrItem + " ");
         }
-        	
-        bufferedReader.close();
 
-	}
+        scanner.close();
+    }
 }

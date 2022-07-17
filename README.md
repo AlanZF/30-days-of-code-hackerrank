@@ -1,7 +1,5 @@
-## Códigos para os desafios do 30 Days of Code do HackerRank
+## Minhas soluções para o 30 Days of Code do HackerRank
 
-Como adoro desafios de lógica, me propus a fazer os trinta dias de código do site HackerRank.
-
-E neste repositório postarei as soluções que desenvolvi na linguagem Java.
+A linguagem é Java, mas lembrando que as soluções estão na estrutura exigida no editor de código do Hackerrank, sendo assim tem algumas diferenças entre um código Java executável no sistema operacional (pela linha de comando ou por uma IDE, por exemplo).
 
 Para ver todos os desafios: https://www.hackerrank.com/domains/tutorials/30-days-of-code
